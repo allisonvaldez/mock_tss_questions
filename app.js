@@ -1,4 +1,21 @@
 /*
+ 1. Complete the 'logicalColors' function below:
+        The function is expected to return a STRING.
+        The function accepts following parameters:
+            1. BOOLEAN x
+            2. BOOLEAN y
+ */
+
+function logicalColors(x, y) {
+
+}
+
+
+
+
+
+
+/*
 
 4. Complete the 'onlyEvens' function below:
     The function is expected to return an INTEGER_ARRAY.
@@ -9,13 +26,12 @@ function onlyEvens(arr) {
 
     let newArray = [];
 
-    for (let index of arr) {
-        if (index % 2 === 0) {
-            newArray.push(index)
+    for (let i of arr) {
+        if (i % 2 === 0) {
+            newArray.push(i)
         }
     }
     return newArray;
-
 
 }
 
