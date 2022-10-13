@@ -6,19 +6,21 @@
             2. BOOLEAN y
  */
 
-let x = true;
-let y = false;
+let x, y;
 
 function logicalColors(x, y) {
     console.log("colors");
-    
-    if (x) {
-        return console.log("Red");
+
+    if (x === true) {
+        console.log("red");
+    }
+    else if (y === false) {
+        console.log("yellow")
     }
 
 }
 
-console.log(logicalColors(x));
+console.log(logicalColors());
 
 
 
