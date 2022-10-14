@@ -29,8 +29,21 @@ function logicalColors(x, y) {
 console.log(logicalColors(false));
 
 
+/*
+ 2. Complete the 'max' function below:
+        The function is expected to return an INTEGER.
+        The function accepts INTEGER_ARRAY arr as parameter.
+ */
 
+function max(arr) {
 
+}
+
+/*
+
+3. 
+
+*/
 
 
 /*
