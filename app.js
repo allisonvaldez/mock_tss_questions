@@ -52,10 +52,12 @@ function max(arr) {
 console.log(max([50, 90, 3, -2]));
 
 /*
-
-3. 
-
+3. Complete the 'removeNumbers' function below:
+        The function is expected to return a STRING.
+        The function accepts STRING str as parameter.
 */
+
+console.log("q3");
 
 
 /*
