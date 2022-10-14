@@ -6,21 +6,27 @@
             2. BOOLEAN y
  */
 
-let x, y;
+/* 
+why do not need to declare let x === true or y === false first outside or inside the function?
+*/
 
 function logicalColors(x, y) {
-    console.log("colors");
-
-    if (x === true) {
-        console.log("red");
+    if (x === true && y === false) {
+        return "Blue";
+    }
+    else if (x === true) {
+        return "Red";
     }
     else if (y === false) {
-        console.log("yellow")
+        return "Yellow";
+    }
+    else {
+        return "Purple";
     }
 
 }
 
-console.log(logicalColors());
+console.log(logicalColors(false));
 
 
 
