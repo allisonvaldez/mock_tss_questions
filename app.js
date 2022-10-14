@@ -39,13 +39,17 @@ console.log(logicalColors(false));
 console.log("q2");
 
 function max(arr) {
-    while (i < arr.length) {
-        arr[i] < arr[i + 1];
-        return arr[i + 1];
+    let highestNum = 0;
+
+    for (let i of arr) {
+        if (i > highestNum) {
+            highestNum = i;
+        }
     }
+    return highestNum;
 }
 
-console.log(max([4, 3, 2]));
+console.log(max([4, 3, 2, 1]));
 
 /*
 
