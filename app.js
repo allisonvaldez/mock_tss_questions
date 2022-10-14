@@ -9,6 +9,7 @@
 /* 
 why do not need to declare let x === true or y === false first outside or inside the function?
 */
+console.log("q1");
 
 function logicalColors(x, y) {
     if (x === true && y === false) {
@@ -35,9 +36,17 @@ console.log(logicalColors(false));
         The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-function max(arr) {
+console.log("q2");
 
+function max(arr) {
+    for (let i of arr) {
+        if (arr[i] < arr[i + 1]) {
+            return arr[i + 1];
+        }
+    }
 }
+
+console.log(max([1, 2, 3, 4]));
 
 /*
 
@@ -53,6 +62,7 @@ function max(arr) {
     The function accepts INTEGER_ARRAY arr as parameter.
 */
 
+console.log("q4");
 function onlyEvens(arr) {
 
     let newArray = [];
