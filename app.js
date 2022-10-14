@@ -49,7 +49,7 @@ function max(arr) {
     return highestNum;
 }
 
-console.log(max([4, 3, 2, 1]));
+console.log(max([50, 90, 3, -2]));
 
 /*
 
