@@ -9,7 +9,7 @@
 /* 
 why do not need to declare let x === true or y === false first outside or inside the function?
 */
-console.log("q1");
+console.log("1. logicalColors()");
 
 function logicalColors(x, y) {
     if (x === true && y === false) {
@@ -36,7 +36,7 @@ console.log(logicalColors(false));
         The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-console.log("q2");
+console.log("2. max()");
 
 function max(arr) {
     let highestNum = 0;
@@ -57,7 +57,7 @@ console.log(max([50, 90, 3, -2]));
         The function accepts STRING str as parameter.
 */
 
-console.log("q3");
+console.log("3. removeNumbers()");
 
 //when should i declare variables/empty string global or local to function
 
@@ -85,7 +85,7 @@ console.log(removeNumbers("i 4uo4"));
     The function accepts INTEGER_ARRAY arr as parameter.
 */
 
-console.log("q4");
+console.log("4: onlyEvens()");
 function onlyEvens(arr) {
 
     let newArray = [];
@@ -107,7 +107,7 @@ console.log(onlyEvens([1, 2, 3, 4, 5]));
         The function accepts STRING str as parameter.
 */
 
-console.log("q5");
+console.log("5. containsEveryVowel()");
 
 function containsEveryVowel(str) {
 
@@ -136,8 +136,10 @@ console.log(containsEveryVowel("hello world"));
         The function accepts STRING str as parameter.
 */
 
-console.log("q6");
+console.log("6. vowelFrequency()");
 
 function vowelFrequency(str) {
-    
+
 }
+
+console.log(vowelFrequency("hello"));
