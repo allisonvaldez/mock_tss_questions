@@ -59,6 +59,8 @@ console.log(max([50, 90, 3, -2]));
 
 console.log("q3");
 
+//when should i declare variables/empty string global or local to function
+
 let newString = [];
 
 function removeNumbers(str) {
@@ -108,9 +110,24 @@ console.log(onlyEvens([1, 2, 3, 4, 5]));
 console.log("q5");
 
 function containsEveryVowel(str) {
-    
+
+    //when should i declare variables/empty string global or local to function
+    let vowels = "aeiou";
+
+    for (let vowel of vowels) {
+        if (str.includes(vowel) === false) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    //why is the return true happen here
+    //return true;
 }
-console.log(containsEveryVowel("hello"));
+
+console.log(containsEveryVowel("giant sequoia"));
+console.log(containsEveryVowel("hello world"));
 
 
 
@@ -121,3 +138,5 @@ console.log(containsEveryVowel("hello"));
         The function is expected to return a STRING.
         The function accepts STRING str as parameter.
 */
+
+console.log("q6");
