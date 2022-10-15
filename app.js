@@ -130,9 +130,6 @@ console.log(containsEveryVowel("giant sequoia"));
 console.log(containsEveryVowel("hello world"));
 
 
-
-
-
 /*
 6. Complete the 'vowelFrequency' function below.
         The function is expected to return a STRING.
@@ -140,3 +137,7 @@ console.log(containsEveryVowel("hello world"));
 */
 
 console.log("q6");
+
+function vowelFrequency(str) {
+    
+}
