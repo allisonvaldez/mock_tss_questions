@@ -59,6 +59,22 @@ console.log(max([50, 90, 3, -2]));
 
 console.log("q3");
 
+let newString = [];
+
+function removeNumbers(str) {
+    for (let chars in str) {
+        // we never discussed this in the videos tried to google but no result
+        let castToNum = +chars
+
+        if (chars === " " || isNaN(castToNum)) {
+            newString.push(chars)
+        }
+    }
+    return newString.join("");
+}
+
+console.log(removeNumbers("i 4uo4"));
+
 
 /*
 
@@ -81,4 +97,27 @@ function onlyEvens(arr) {
 
 }
 
-console.log(onlyEvens([1,2,3,4,5]));
+console.log(onlyEvens([1, 2, 3, 4, 5]));
+
+/*
+5.  Complete the 'containsEveryVowel' function below.
+        The function is expected to return a BOOLEAN.
+        The function accepts STRING str as parameter.
+*/
+
+console.log("q5");
+
+function containsEveryVowel(str) {
+    
+}
+console.log(containsEveryVowel("hello"));
+
+
+
+
+
+/*
+6. Complete the 'vowelFrequency' function below.
+        The function is expected to return a STRING.
+        The function accepts STRING str as parameter.
+*/
