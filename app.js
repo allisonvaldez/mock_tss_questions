@@ -139,7 +139,31 @@ console.log(containsEveryVowel("hello world"));
 console.log("6. vowelFrequency()");
 
 function vowelFrequency(str) {
+    let vowels = "aeiou";
+    let final = {};
 
+    for (let character of str) {
+        if (vowels.includes(character)) {
+            if (final[character] === undefined) {
+                final[character] = 1 
+            }
+            else {
+                final[character]++
+            }
+        }
+    }
+
+    let finalString = "";
+
+    //please explain of and in as the videos did not cover it
+    for (let key in final) {
+        finalString += key + final[key];
+    }
+    
+    return finalString
 }
 
-console.log(vowelFrequency("hello"));
+
+console.log(vowelFrequency("hello world"));
+console.log(vowelFrequency("we are the champions"));
+console.log(vowelFrequency("wplz & thx"));
