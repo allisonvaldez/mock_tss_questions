@@ -10,8 +10,9 @@
 why do not need to declare let x === true or y === false first outside or inside the function?
 */
 console.log("1. logicalColors()");
-
+//work inside of the body not outsie its already defined its given so write it inside of the function
 function logicalColors(x, y) {
+    // flow diagrams will dictate the order not the answer
     if (x === true && y === false) {
         return "Blue";
     }
@@ -100,6 +101,7 @@ console.log("3. removeNumbers()");
 when should i declare variables / empty string global or local to function was on outside in the solution but in the video it was on the inside of the function
 */
 
+//accessed outside of block of code make it global
 let newString = [];
 
 function removeNumbers(str) {
@@ -184,24 +186,32 @@ function onlyEvens(arr) {
 
 console.log("5. containsEveryVowel()");
 
+// take a pen and paper to walk through logic before coding what variables needed etcs and what loops look like before coding
+// make sure have the requriements correct before coding during whiteboard
+//look at google interviews on YT
+
 function containsEveryVowel(str) {
+
 
     //when should i declare variables/empty string global or local to function
     let vowels = "aeiou";
 
+    //set up a boolean variable to be false for vowel existence
+    let stringHasAllVowels = true;
+
     for (let vowel of vowels) {
-        if (str.includes(vowel) === false) {
-            return false;
-        }
-        else {
-            return true;
+        //evals as boolean no need explicit
+        if (!str.includes(vowel)) {
+            stringHasAllVowels = false;
         }
     }
     //why is the return true happen here
     //return true;
+
+    return stringHasAllVowels
 }
 
-console.log(containsEveryVowel("giant sequoia"));
+console.log(containsEveryVowel("aeiou"));
 console.log(containsEveryVowel("hello world"));
 
 /*
@@ -271,6 +281,7 @@ function vowelFrequency(str) {
     let finalString = "";
 
     //please explain of and in as the videos did not cover it
+    //obj are not iterative use in for obj ONLY
     for (let key in final) {
         finalString += key + final[key];
     }
